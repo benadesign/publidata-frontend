@@ -17,20 +17,21 @@ $header-font: "Raleway", "Helvetica", "sans-serif";
 // $my-font: "Font Name";
 
 // Font-size and line-height
-$base-size: 16px;
+$base-size: 14px;
 $base-height: 1.4;
 
 /* -------------------------------------
- * Colors
- * ------------------------------------- */
+* Colors
+* ------------------------------------- */
 // Scheme
-$brand-color: #D23333;
+$brand-color: #40494E;
 
-$red: #EE5F5B;
-$blue: #469AE0;
-$yellow: #FDB631;
-$orange: #E67E22;
-$green: #32B796;
+$red: #E5332A;
+$blue: #30B6C8;
+$yellow: #FFCC00;
+$orange: #E67E22; // pas dans le template
+$green: #32B796; // pas dans le template
+$white-grey: #F2F2F3;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222
