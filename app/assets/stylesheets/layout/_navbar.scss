@@ -1,4 +1,4 @@
-.navbar-wagon {
+.navbar {
   background-color: $brand-color;
   transition: all 0.3s ease;
   border-bottom: 10px solid $blue;
@@ -13,10 +13,7 @@
     height: 40px;
   }
   &-container {
-    display: flex;
     height: 70px;
-    max-width: 1000px;
-    align-items: center;
   }
   &-pusher {
     flex: 1 1 auto;

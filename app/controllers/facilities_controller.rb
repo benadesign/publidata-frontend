@@ -10,17 +10,16 @@ class FacilitiesController < ApplicationController
       d'Aéroports de Paris, vous trouverez dans cet espace de 600m² 3 pôles
       thématiques : un pôle histoire retraçant l'évolution de l'aéroport,
       un pôle navigation aérienne animé par plusieurs vidéos présentant ses
-      grands principes, un pôle ressources sur les métiers de la plate-forme."
+      grands principes, un pôle ressources sur les métiers de la plate-forme.",
       tel: "0170034062",
       mail: "faux-mdeorly@adp.fr",
       address: "Avenue Jean-Pierre Bénard 91200 Athis-Mons",
       featured: false,
-      city:
+      city: "Vert Saint Denis"
     }
 
     @city = {
-      postal_code: "91200",
-
+      postal_code: "91200"
     }
   end
 end

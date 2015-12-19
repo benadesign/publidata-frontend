@@ -1,32 +1,34 @@
-.header-card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+.card {
+  position: relative;
+}
+.card-bg {
+  height: 300px;
   background-size: cover !important;
   color: white;
   position: relative;
 }
-.card-category {
-  font-size: 10px;
-  text-transform: uppercase;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-.card-text {
+.header-card-text {
   position: absolute;
   bottom: 10px;
   left: 10px;
   h2 {
-    font-size: 24px;
+    font-size: 40px;
   }
   p {
-    font-size: 13px;
+    font-size: 20px;
   }
 }
-.card-user {
+.card-category {
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 10px;
+}
+.card-logo {
+  width: 40px;
+  border-radius: 50%;
 }
 .card-link {
   position: absolute;

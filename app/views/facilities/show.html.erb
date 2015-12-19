@@ -1,21 +1,26 @@
-<div class="page-title">
-  Equipements
+<div class="full-width bottom-border flex-center">
+  <div class="container max-width margin-top-80 padding-top-15 padding-bottom-15">
+    Equipements
+  </div>
 </div>
-<div class="container">
+
+<div class="container max-width">
   <div class="row">
     <div class="col-xs-12">
-      <div class="header-card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');">
-        <div class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
+      <div class="card">
+        <div class="card-bg" style="background-image: url(<%= image_path "img_facility.jpg" %>)">
+          <div class="header-card-text">
+            <h2>Maison de l'environnement</h2>
+            <p>Culture, environnement</p>
+          </div>
+          <div class="card-category">
+            <%= image_tag "picto_sport_orange.png", class: "card-logo" %>
+          </div>
+          <a href="#" class="card-link"></a>
         </div>
-        <div class="card-user">
-          <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
-        </div>
-        <a href="#" class="card-link"></a>
       </div>
-
 
     </div>
   </div>
 </div>
+
