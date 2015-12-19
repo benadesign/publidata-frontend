@@ -9,34 +9,35 @@
 // Local fonts
 @font-face {
   font-family: "Galano Grotesque Bold";
-  src: font-url('Rene Bieder - Galanon Grotesque Bold.otf');
-  src: font-url('Rene Bieder - Galanon Grotesque Bold.otf?#iefix') format('embedded-opentype'),
-       font-url('Rene Bieder - Galanon Grotesque Bold.otf') format('woff'),
-       font-url('Rene Bieder - Galanon Grotesque Bold.otf') format('truetype')
+  src: url('Rene Bieder - Galano Grotesque Bold.otf') format('truetype');
+  src: url('Rene Bieder - Galano Grotesque Bold.otf?#iefix') format('embedded-opentype'),
+       url('Rene Bieder - Galano Grotesque Bold.woff') format('woff'),
+       url('Rene Bieder - Galano Grotesque Bold.ttf') format('truetype')
 }
 $header-font: "Galano Grotesque Bold";
 
 @font-face {
   font-family: "Galano Grotesque Medium";
-  src: font-url('Rene Bieder - Galanon Grotesque Medium.otf');
-  src: font-url('Rene Bieder - Galanon Grotesque Medium.otf?#iefix') format('embedded-opentype'),
-       font-url('Rene Bieder - Galanon Grotesque Medium.otf') format('woff'),
-       font-url('Rene Bieder - Galanon Grotesque Medium.otf') format('truetype')
+  src: url('Rene Bieder - Galano Grotesque Medium.otf') format('truetype');
+  src: url('Rene Bieder - Galano Grotesque Medium.otf?#iefix') format('embedded-opentype'),
+       url('Rene Bieder - Galano Grotesque Medium.woff') format('woff'),
+       url('Rene Bieder - Galano Grotesque Medium.ttf') format('truetype')
 }
 $second-font: "Galano Grotesque Medium";
 
 // @font-face {
 //   font-family: "Galano Grotesque Medium";
-//   src: font-url('Rene Bieder - Galanon Grotesque Medium.otf');
-//   src: font-url('Rene Bieder - Galanon Grotesque Medium.otf?#iefix') format('embedded-opentype'),
-//        font-url('Rene Bieder - Galanon Grotesque Medium.otf') format('woff'),
-//        font-url('Rene Bieder - Galanon Grotesque Medium.otf') format('truetype')
+//   src: font-url('Rene Bieder - Galano Grotesque Medium.otf');
+//   src: font-url('Rene Bieder - Galano Grotesque Medium.otf?#iefix') format('embedded-opentype'),
+//        font-url('Rene Bieder - Galano Grotesque Medium.otf') format('woff'),
+//        font-url('Rene Bieder - Galano Grotesque Medium.otf') format('truetype')
 // }
 $base-font: "Galano Grotesque Medium";
 
 // Font-size and line-height
 $base-size: 14px;
 $base-height: 1.4;
+$header-size: 56px;
 
 /* -------------------------------------
  * Colors
@@ -49,7 +50,7 @@ $blue: #30B6C8;
 $yellow: #FFCC00;
 $orange: #E67E22; // pas dans le template
 $green: #32B796; // pas dans le template
-$white-grey: #F2F2F3
+$white-grey: #F2F2F3;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222
