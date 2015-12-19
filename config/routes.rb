@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
+
+  get 'votre-agglo/carte-d-identite' => 'home#identity_card_agglo'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
