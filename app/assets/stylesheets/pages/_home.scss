@@ -3,12 +3,18 @@
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
 
- h1 {
-  font-size: $header-size;
-  font-family: $header-font;
+  h1 {
+    font-size: $header-size;
+    font-family: $header-font;
   }
 
- p {
-  font-size: $base-size;
-  font-family: $base-font;
+  p {
+    font-size: $base-size;
+    font-family: $base-font;
+  }
+
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
