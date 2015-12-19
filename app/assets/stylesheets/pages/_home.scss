@@ -8,13 +8,12 @@
     font-family: $header-font;
   }
 
+  h1 {
+    font-size: $title-size;
+    font-family: $header-font;
+  }
+
   p {
     font-size: $base-size;
     font-family: $base-font;
-  }
-
-  ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
   }
