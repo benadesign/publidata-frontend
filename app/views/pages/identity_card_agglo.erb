@@ -2,8 +2,91 @@
 
   <div class="row">
     <div>
-      <h1>Pages#id_card_agglo</h1>
-      <p>Find me in app/views/pages/home.html.erb</p>
+      <h1>Carte d'identité</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div>
+      <h2>Vidéo#à rajouter plus tard</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div>
+      <h2>« Grand Paris Sud » qu'est-ce-que c'est ?</h2>
+      <p>Une nouvelle agglomération au sud de l'Ile-de-France qui regroupe 24 communes sur deux départements, l'Essonne et la Seine-et-Marne.</p>
+
+      <p> Avec ses 331 747 habitants, Grand Paris Sud est le 5ème territoire francilien en nombre d'habitants et l'un des moteurs de la croissance démographique de la région Ile-de-France.
+        <ul>
+          <li>
+            Pôle économique majeur de la région francilienne, Grand Paris Sud accueille plus de 15 000 entreprises, de nombreux sièges sociaux de grands groupes ( Snecma-Safran, Arianespace, Truffaut..), des industries de pointe (high-tech, éco-activités, recherche médicale…), 5 centres commerciaux à notoriété régionale et 9 établissements d'enseignement supérieur attirant près de 18 000 étudiants.
+          </li>
+          <li>Parmi les atouts contribuant à l'attractivité de Grand Paris Sud :
+            <li>la conjugaison d'une desserte routière et ferroviaire dense (17 gares RER) avec une large présence des espaces verts (Forêts de Sénart, de Rougeau, Bois de Saint-Eutrope..) et terres agricoles.
+            </li>
+            <li>De nombreux équipements de loisirs, culturels et sportifs : salles dédiées au spectacle vivant (dont 2 scènes nationales), cinémas, réseaux de médiathèques et conservatoires, piscines, patinoire, bowling, parcours de golf, terrain de base-ball...
+            </li>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card card-blue">
+      <div class="col-xs-12 col-sm-4">
+        <h2>24 communes</h2>
+        <%= image_tag "carte.png" %>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="row">
+          <div class="col-xs-6">
+            <ul>
+              <% @communes[0..@communes.length/2.round].each do |commune| %>
+                <li>
+                  <%= commune %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <% @communes[@communes.length/2.round+1..@communes.length].each do |commune| %>
+                <li>
+                  <%= commune %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card card-grey">
+      <div class="col-xs-12 col-sm-6">
+        <h3>La génèse</h3>
+        <p>Date de naissance : 1er janvier 2016 <p>
+        <p>Origines : la nouvelle agglomération est issue de la fusion des agglomérations d'Evry Centre Essonne (CAECE), de Seine Essonne (CASE), et de Sénart (Sénart), du Syndicat d'agglomération nouvelle de Sénart en Essonne ( SAN 91) et de la commune de Grigny jusqu'alors intégrée à l'agglomération des Lacs de l'Essonne (CALE).  <p>
+        <p> Pourquoi cette grande agglo ? cette fusion s'est faite dans le cadre de la mise en œuvre du Schéma Régional de Coopération Intercommunale (SRCI) ré-organisant la Grande Couronne francilienne.<p>
+        <p> L'objectif est de créer des intercommunalités de taille suffisante (+ de 200 000 habitants) pour peser dans les échanges avec la Métropole du Grand Paris. <p>
+        <p> Précédemment : 41 intercommunalités en Ile-de-France. Taille moyenne : 95 000 habitants<p>
+        <p> En janvier 2016 : 18 intercommunalités. Taille moyenne : 240 000 habitants</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <ul>
+        <li class="chart" data-percent="51"><span>51%</span>d'espaces agricoles</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+    </div>
+    <div class="col-xs-12 col-sm-4">
     </div>
   </div>
 
@@ -55,3 +138,5 @@
   </div>
 
 </div>
+
+
