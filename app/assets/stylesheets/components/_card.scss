@@ -1,0 +1,99 @@
+// Header card
+.card {
+  position: relative;
+}
+.card-bg {
+  height: 300px;
+  background-size: cover !important;
+  color: white;
+  position: relative;
+}
+.card-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  // max-width: 450px;
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16;
+  }
+}
+.card-category {
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.card-logo {
+  width: 25px;
+  border-radius: 50%;
+}
+
+// Sub Cards
+.sub-card-row {
+
+  hr {
+    height: 250px;
+    width: 1px;
+    background-color: $brand-color;
+    opacity: 0.3;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+.sub-card {
+  position: relative;
+  height: 250px;
+}
+
+// Sub card for images
+.sub-card-bg {
+  // height: 250px;
+  height: 100%;
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  justify-content: center;
+}
+.sub-card-gradient {
+  background-size: cover !important;
+  background-color: black; //$brand-color;
+  opacity: 0.4;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.sub-card-text {
+  z-index: 2;
+  p {
+    font-size: 30px;
+  }
+}
+.sub-card-map {
+
+}
+// sub card for hours
+.bg-orange {
+  background: $orange;
+}
+
+// sub card for map
+#map {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
