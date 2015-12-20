@@ -21,13 +21,6 @@
   }
 }
 
-.card-category {
-  font-size: 10px;
-  text-transform: uppercase;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
 .card-text {
   position: absolute;
   bottom: 10px;
@@ -39,23 +32,29 @@
     font-size: 14px;
   }
 }
-.card-user {
+.card-type {
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index:2;
-  background: black;
-  opacity: 0;
-  &:hover{
-    opacity: 0.1;
+
+.colored {
+  background-size: cover !important;
+  color: white;
+  &-red{
+    background: $red;
+  }
+  &-green{
+    background: $green;
+  }
+  &-blue{
+    background: $blue;
+  }
+  &-grey{
+    background: $brand-color;
   }
 }
+
 
 
 
