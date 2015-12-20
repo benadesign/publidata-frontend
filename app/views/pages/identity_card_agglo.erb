@@ -33,48 +33,44 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="card card-blue">
-      <div class="col-xs-12 col-sm-4">
-        <h2>24 communes</h2>
-        <%= image_tag "carte.png" %>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <div class="row">
-          <div class="col-xs-6">
-            <ul>
-              <% @communes[0..@communes.length/2.round].each do |commune| %>
-                <li>
-                  <%= commune %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <% @communes[@communes.length/2.round+1..@communes.length].each do |commune| %>
-                <li>
-                  <%= commune %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
+  <div class="row colored colored-blue"  >
+    <div class="col-xs-12 col-sm-4">
+      <h2>24 communes</h2>
+      <%= image_tag "carte.png" %>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <div class="row">
+        <div class="col-xs-6">
+          <ul>
+            <% @communes[0..@communes.length/2.round].each do |commune| %>
+              <li>
+                <%= commune %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col-xs-6">
+          <ul>
+            <% @communes[@communes.length/2.round+1..@communes.length].each do |commune| %>
+              <li>
+                <%= commune %>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="card card-grey">
-      <div class="col-xs-12 col-sm-6">
-        <h3>La génèse</h3>
-        <p>Date de naissance : 1er janvier 2016 <p>
-        <p>Origines : la nouvelle agglomération est issue de la fusion des agglomérations d'Evry Centre Essonne (CAECE), de Seine Essonne (CASE), et de Sénart (Sénart), du Syndicat d'agglomération nouvelle de Sénart en Essonne ( SAN 91) et de la commune de Grigny jusqu'alors intégrée à l'agglomération des Lacs de l'Essonne (CALE).  <p>
-        <p> Pourquoi cette grande agglo ? cette fusion s'est faite dans le cadre de la mise en œuvre du Schéma Régional de Coopération Intercommunale (SRCI) ré-organisant la Grande Couronne francilienne.<p>
-        <p> L'objectif est de créer des intercommunalités de taille suffisante (+ de 200 000 habitants) pour peser dans les échanges avec la Métropole du Grand Paris. <p>
-        <p> Précédemment : 41 intercommunalités en Ile-de-France. Taille moyenne : 95 000 habitants<p>
-        <p> En janvier 2016 : 18 intercommunalités. Taille moyenne : 240 000 habitants</p>
-      </div>
+  <div class="row colored colored-grey">
+    <div class="col-xs-12 col-sm-6">
+      <h3>La génèse</h3>
+      <p>Date de naissance : 1er janvier 2016 <p>
+      <p>Origines : la nouvelle agglomération est issue de la fusion des agglomérations d'Evry Centre Essonne (CAECE), de Seine Essonne (CASE), et de Sénart (Sénart), du Syndicat d'agglomération nouvelle de Sénart en Essonne ( SAN 91) et de la commune de Grigny jusqu'alors intégrée à l'agglomération des Lacs de l'Essonne (CALE).  <p>
+      <p> Pourquoi cette grande agglo ? cette fusion s'est faite dans le cadre de la mise en œuvre du Schéma Régional de Coopération Intercommunale (SRCI) ré-organisant la Grande Couronne francilienne.<p>
+      <p> L'objectif est de créer des intercommunalités de taille suffisante (+ de 200 000 habitants) pour peser dans les échanges avec la Métropole du Grand Paris. <p>
+      <p> Précédemment : 41 intercommunalités en Ile-de-France. Taille moyenne : 95 000 habitants<p>
+      <p> En janvier 2016 : 18 intercommunalités. Taille moyenne : 240 000 habitants</p>
     </div>
   </div>
 
@@ -90,53 +86,6 @@
     </div>
   </div>
 
-  <div class="row">
 
-    <div class="col-xs-12 col-sm-4">
-      <div class="card card-red">
-        <div class="card-category">Popular</div>
-        <div class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </div>
-        <div class="card-user">
-          <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
-        </div>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="card card-blue">
-        <div class="card-category">Popular</div>
-        <div class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </div>
-        <div class="card-user">
-          <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
-        </div>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="card card-grey ">
-        <div class="card-category">Popular</div>
-        <div class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </div>
-        <div class="card-user">
-          <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
-        </div>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-
-  </div>
-
-</div>
 
 
