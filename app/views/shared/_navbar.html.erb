@@ -1,0 +1,27 @@
+<nav class="navbar navbar-fixed">
+  <div class="container navbar-container max-width flex-center">
+
+    <a href="/">
+      <%= image_tag "logo.png", class: "navbar-logo" %>
+    </a>
+
+    <div class="navbar-pusher"></div>
+
+    <div class="navbar-item">
+      <div class="dropdown">
+        <%= image_tag "picto_menu.png", class: "navbar-logo dropdown-toggle", id: "navbar-menu", "data-toggle" => "dropdown" %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+          <li><a href="#">Votre agglo</a></li>
+          <li><a href="#">Projets</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Equipements</a></li>
+          <li><a href="#">Actus</a></li>
+          <li><a href="#">Evènements</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-item">
+      <%= image_tag "picto_search.png", class: "navbar-logo dropdown-toggle", id: "navbar-menu", "data-toggle" => "dropdown" %>
+    </div>
+  </div>
+</nav>

@@ -41,17 +41,18 @@ $header-size: 56px;
 $title-size: 32px;
 
 /* -------------------------------------
- * Colors
- * ------------------------------------- */
+* Colors
+* ------------------------------------- */
 // Scheme
-$brand-color: #40494E;
+$brand-color: #40494E; // rgba(64, 73, 78, 0.3) brand-color in RGBA
 
 $red: #E5332A;
 $blue: #30B6C8;
 $yellow: #FFCC00;
-$orange: #E67E22; // pas dans le template
+$orange: #f9b200;
 $green: #32B796; // pas dans le template
 $white-grey: #F2F2F3;
+$light-grey: #58595B;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222
