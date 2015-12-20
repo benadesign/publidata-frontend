@@ -1,0 +1,35 @@
+
+.bloc-colored {
+  background-size: cover !important;
+  color: white;
+  &-red{
+    background: $red;
+  }
+  &-green{
+    background: $green;
+  }
+  &-blue{
+    background: $blue;
+  }
+  &-grey{
+    background: $brand-color;
+  }
+}
+
+.text-colored {
+  &-red{
+    color: $red;
+  }
+  &-green{
+    color: $green;
+  }
+  &-blue{
+    color: $blue;
+  }
+  &-grey{
+    color: $brand-color;
+  }
+}
+
+
+
