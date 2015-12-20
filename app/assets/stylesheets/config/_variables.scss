@@ -2,23 +2,43 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+// @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+// $base-font: "Open Sans", "Helvetica", "sans-serif";
+// $header-font: "Raleway", "Helvetica", "sans-serif";
 
-// Local fonts (uncomment following lines)
+// Local fonts
+@font-face {
+  font-family: "Galano Grotesque Bold";
+  src: url('Rene Bieder - Galano Grotesque Bold.otf') format('truetype');
+  // src: url('Rene Bieder - Galano Grotesque Bold.otf?#iefix') format('embedded-opentype'),
+  //      url('Rene Bieder - Galano Grotesque Bold.woff') format('woff'),
+  //      url('Rene Bieder - Galano Grotesque Bold.ttf') format('truetype')
+}
+$header-font: "Galano Grotesque Bold";
+
+@font-face {
+  font-family: "Galano Grotesque Medium";
+  src: url('Rene Bieder - Galano Grotesque Medium.otf') format('truetype');
+  // src: url('Rene Bieder - Galano Grotesque Medium.otf?#iefix') format('embedded-opentype'),
+  //      url('Rene Bieder - Galano Grotesque Medium.woff') format('woff'),
+  //      url('Rene Bieder - Galano Grotesque Medium.ttf') format('truetype')
+}
+$second-font: "Galano Grotesque Medium";
+
 // @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
+//   font-family: "Galano Grotesque Medium";
+//   src: font-url('Rene Bieder - Galano Grotesque Medium.otf');
+//   src: font-url('Rene Bieder - Galano Grotesque Medium.otf?#iefix') format('embedded-opentype'),
+//        font-url('Rene Bieder - Galano Grotesque Medium.otf') format('woff'),
+//        font-url('Rene Bieder - Galano Grotesque Medium.otf') format('truetype')
 // }
-// $my-font: "Font Name";
+$base-font: "Galano Grotesque Medium";
 
 // Font-size and line-height
 $base-size: 14px;
 $base-height: 1.4;
+$header-size: 56px;
+$title-size: 32px;
 
 /* -------------------------------------
 * Colors
