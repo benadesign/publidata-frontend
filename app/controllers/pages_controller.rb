@@ -28,6 +28,9 @@ class PagesController < ApplicationController
                 "Vert-Saint-Denis",
                 "Cesson",
                 "Nandy" ]
+
+    @color = "30B6C8"
+    @color_name = "blue"
   end
 
 end
