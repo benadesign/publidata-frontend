@@ -68,4 +68,12 @@
   background-size: cover !important;
 }
 
+.st0 {
+  fill: $blue;
+  &:hover{
+    fill: white;
+      -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+  }
+}
 

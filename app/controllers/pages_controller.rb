@@ -29,8 +29,20 @@ class PagesController < ApplicationController
                 "Cesson",
                 "Nandy" ]
 
+
     @color = "30B6C8"
     @color_name = "blue"
+
+    @figures = {
+      "habitants" => 331747,
+      "emplois" => 137000,
+      "entreprises" => 14985,
+      "étudiants" => 17700,
+      "logements" => 129000,
+      "espacesagricoles" => "51%",
+    }
+
+
   end
 
 end

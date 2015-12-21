@@ -33,6 +33,10 @@ h4 {
   font-size: $mini-size;
 }
 
+.max-size {
+  font-size: $max-size;
+}
+
 // Paddings
 .padding-top-10 {
   padding-top: 10px;
@@ -73,6 +77,9 @@ h4 {
 .padding-right-2 {
   padding-right: 2px;
 }
+.padding-right-5 {
+  padding-right: 5px;
+}
 .padding-right-10 {
   padding-right: 10px;
 }
@@ -84,6 +91,9 @@ h4 {
 }
 .padding-left-2 {
   padding-left: 2px;
+}
+.padding-left-5 {
+  padding-left: 5px;
 }
 .padding-left-10 {
   padding-left: 10px;
@@ -174,9 +184,7 @@ h4 {
 .margin-left-30 {
   margin-left: 30px;
 }
-.padding-10 {
-  padding: 10px;
-}
+
 
 // maximum width of content
 .max-width {
@@ -203,3 +211,29 @@ h4 {
 .pusher {
   flex: 1 1 auto;
 }
+
+// bg
+.bg-height-500 {
+  height: 500px;
+  background-size: cover !important;
+  position: relative;
+}
+
+.bg-height-400 {
+  height: 400px;
+  background-size: cover !important;
+  position: relative;
+}
+
+.bg-height-300 {
+  height: 300px;
+  background-size: cover !important;
+  position: relative;
+}
+
+.bg-height-200 {
+  height: 200px;
+  background-size: cover !important;
+  position: relative;
+}
+
