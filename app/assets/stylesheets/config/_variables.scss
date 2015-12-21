@@ -14,7 +14,7 @@
   //      url('Rene Bieder - Galano Grotesque Bold.woff') format('woff'),
   //      url('Rene Bieder - Galano Grotesque Bold.ttf') format('truetype')
 }
-$header-font: "Galano Grotesque Bold";
+$bold-font: "Galano Grotesque Bold";
 
 @font-face {
   font-family: "Galano Grotesque Medium";
@@ -23,7 +23,7 @@ $header-font: "Galano Grotesque Bold";
   //      url('Rene Bieder - Galano Grotesque Medium.woff') format('woff'),
   //      url('Rene Bieder - Galano Grotesque Medium.ttf') format('truetype')
 }
-$second-font: "Galano Grotesque Medium";
+$medium-font: "Galano Grotesque Medium";
 
 // @font-face {
 //   font-family: "Galano Grotesque Medium";
@@ -35,10 +35,12 @@ $second-font: "Galano Grotesque Medium";
 $base-font: "Galano Grotesque Medium";
 
 // Font-size and line-height
-$base-size: 14px;
-$base-height: 1.4;
-$header-size: 56px;
-$title-size: 32px;
+$base-size: 14px; // for content
+$max-size: 56px;
+$h1-size: 46px; // for titles, except on "votre agglo" page
+$h2-size: 32px; // for title of featured article on home
+$h3-size: 18px; // for articles titles
+$h4-size: 16px; // for city name on articles
 
 /* -------------------------------------
 * Colors
