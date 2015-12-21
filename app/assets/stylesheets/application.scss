@@ -14,5 +14,9 @@
 @import "pages/index";
 @import "vendor/index";
 
-// For the carousel
+// For the pictures carousel
 @import "lightbox/lightbox.scss";
+
+// for owl carousel
+@import "owl.carousel";
+@import "owl.theme";

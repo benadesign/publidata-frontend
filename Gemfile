@@ -39,3 +39,6 @@ group :production do
   gem 'rails_12factor'
   gem 'puma'
 end
+
+# carousel
+gem 'owlcarousel-rails'
