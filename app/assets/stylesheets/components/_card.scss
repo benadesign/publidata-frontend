@@ -2,9 +2,11 @@
 .card {
   position: relative;
 }
+
 .card-bg {
   height: 300px;
   background-size: cover !important;
+  background-position: center center;
   color: white;
   position: relative;
 }
@@ -21,6 +23,7 @@
   position: absolute;
   left: 15px;
   top: 15px;
+  z-index: 1;
 }
 .card-logo {
   width: 25px;
@@ -52,6 +55,7 @@
   // height: 250px;
   height: 100%;
   background-size: cover !important;
+  background-position: center center;
   color: white;
   position: relative;
   justify-content: center;
@@ -144,3 +148,102 @@
   z-index: 2;
 }
 
+
+// CSS for actus and events
+.post_image {
+  height: 150px;
+  background-size: cover !important;
+  background-position: center center;
+}
+#actus-carousel {
+  p {
+    font-size: $mini-size;
+  }
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: $base-size;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+.actu-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  a {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: $orange;
+    }
+    &:visited &:active {
+      text-decoration: none;
+    }
+  }
+  &-border {
+    a {
+      border: 1px solid $brand-color;
+    }
+  }
+}
+
+
+
+// events
+.event-image {
+  height: 150px;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative;
+}
+.event-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+}
+.event-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  font-size: 18px;
+  padding-right: 7px;
+  padding-left: 7px;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: white;
+    a {
+      color: black;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+.bg-event {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+// more facilities
+.more-facilities {
+  height: 250px;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative;
+}

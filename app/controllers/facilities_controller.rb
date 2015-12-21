@@ -24,5 +24,7 @@ class FacilitiesController < ApplicationController
     @city = {
       postal_code: "91200"
     }
+    @color = "f9b200"
+    @color_name = "orange"
   end
 end

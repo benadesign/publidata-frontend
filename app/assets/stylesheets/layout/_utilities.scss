@@ -24,6 +24,14 @@ h4 {
   font-size: $h4-size;
   font-family: $medium-font;
 }
+.max-size {
+  font-size: $max-size;
+  line-height: 1;
+  font-family: $bold-font;
+}
+.mini-size {
+  font-size: $mini-size;
+}
 
 // Paddings
 .padding-top-10 {
@@ -100,6 +108,12 @@ h4 {
 .margin-top-30 {
   margin-top: 30px;
 }
+.margin-top-40 {
+  margin-top: 40px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
 .margin-top-80 {
   margin-top: 80px;
 }
@@ -136,6 +150,9 @@ h4 {
 .margin-right-10 {
   margin-right: 10px;
 }
+.margin-right-15 {
+  margin-right: 15px;
+}
 .margin-right-20 {
   margin-right: 20px;
 }
@@ -147,6 +164,9 @@ h4 {
 }
 .margin-left-10 {
   margin-left: 10px;
+}
+.margin-left-15 {
+  margin-left: 15px;
 }
 .margin-left-20 {
   margin-left: 20px;
