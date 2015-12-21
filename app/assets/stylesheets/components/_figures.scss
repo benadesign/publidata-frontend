@@ -4,20 +4,14 @@
   margin: 0 20px;
   vertical-align: top;
   position: relative;
- .box-sizing: border-box;
-  padding-top: 22px;
-
-  span{
-    display: block;
-    font-size: $max-size;
-    font-family: $bold-font;
-  }
-
-  canvas{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 0;
-    top: 0;
-  }
+  width: 150px !important;
+  height: 150px !important;
 }
+
+canvas{
+  position: absolute;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+

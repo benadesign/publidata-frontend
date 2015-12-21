@@ -45,6 +45,7 @@
 
   <!-- row for the description of Grand Paris Sud -->
   <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap">
+    <%= image_tag "photos/dondaine-internet.png" %>
     <div>
       <h2>« Grand Paris Sud » qu'est-ce-que c'est ?</h2>
       <p>Une nouvelle agglomération au sud de l'Ile-de-France qui regroupe 24 communes sur deux départements, l'Essonne et la Seine-et-Marne.</p>
@@ -65,6 +66,7 @@
     </div>
   </div>
 
+  <!-- row for the interactive card -->
   <div class="row text-white bg-blue margin-top-20 margin-bottom-20 flex-center flex-wrap"  >
     <div class="col-xs-12 col-sm-4">
       <h2>24 communes</h2>
@@ -94,8 +96,19 @@
     </div>
   </div>
 
-  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap ">
-    <div class="col-xs-12 col-sm-6 text-white bg-grey">
+  <!-- row for the figures -->
+  <div class="row margin-top-20 margin-bottom-20 left-border right-border">
+    <% @figures.each do |name, figure| %>
+      <div class="col-xs-12 col-sm-4 left-border">
+        <div class="max-size"><%= figure %></div>
+        <div><%= name %></div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- row for the genèse -->
+  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap bottom-border ">
+    <div class="col-xs-12 text-white bg-grey">
       <h3>La génèse</h3>
       <p>Date de naissance : 1er janvier 2016 <p>
       <p>Origines : la nouvelle agglomération est issue de la fusion des agglomérations d'Evry Centre Essonne (CAECE), de Seine Essonne (CASE), et de Sénart (Sénart), du Syndicat d'agglomération nouvelle de Sénart en Essonne ( SAN 91) et de la commune de Grigny jusqu'alors intégrée à l'agglomération des Lacs de l'Essonne (CALE).  <p>
@@ -103,20 +116,6 @@
       <p> L'objectif est de créer des intercommunalités de taille suffisante (+ de 200 000 habitants) pour peser dans les échanges avec la Métropole du Grand Paris. <p>
       <p> Précédemment : 41 intercommunalités en Ile-de-France. Taille moyenne : 95 000 habitants<p>
       <p> En janvier 2016 : 18 intercommunalités. Taille moyenne : 240 000 habitants</p>
-    </div>
-  </div>
-
-  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap ">
-    <div class="col-xs-12 col-sm-4 bloc-colored bloc-colored-red" style = "height: 150px;">
-      <ul>
-        <li class="chart text-center" data-percent="51"><span>51%</span>
-        </li>
-        <p>d'espaces agricoles</p>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-    </div>
-    <div class="col-xs-12 col-sm-4">
     </div>
   </div>
 
@@ -204,7 +203,7 @@
     var options = {
       scaleColor: false,
       trackColor: 'rgba(255,255,255,0.3)',
-      barColor: '#E7F7F5',
+      barColor: '#30B6C8',
       lineWidth: 6,
       lineCap: 'butt',
       size: 95
