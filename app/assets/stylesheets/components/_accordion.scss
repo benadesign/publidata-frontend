@@ -10,6 +10,9 @@
       color: white;
       text-decoration: none;
     }
+    &:visited &:active &:focus {
+      text-decoration: none !important;
+    }
   }
 }
 .accordion-inner {

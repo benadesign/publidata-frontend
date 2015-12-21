@@ -9,6 +9,10 @@
     z-index: 0;
   }
   &-blue{
+    background: $green;
+    z-index: 0;
+  }
+  &-green{
     background: $blue;
     z-index: 0;
   }
@@ -51,9 +55,17 @@
   &-blue{
     color: $blue;
   }
+  &-green{
+    color: $green;
+  }
   &-grey{
     color: $brand-color;
   }
+}
+
+.bg-full {
+  position: relative;
+  background-size: cover !important;
 }
 
 .st0 {
