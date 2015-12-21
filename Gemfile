@@ -15,12 +15,15 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
-# Gems pour les cartes
+# Gem for google map
 gem "geocoder"
 gem "gmaps4rails"
 
 source 'https://rails-assets.org' do
+  # Gem for google map
   gem "rails-assets-underscore"
+  # Gem for carousel
+  gem 'rails-assets-lightbox'
 end
 
 group :development, :test do
