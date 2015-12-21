@@ -2,25 +2,36 @@
 .bg {
   &-red{
     background: $red;
+    z-index: 0;
   }
-  &-green{
-    background: $green;
+  &-orange{
+    background: $orange;
+    z-index: 0;
   }
   &-blue{
     background: $blue;
+    z-index: 0;
   }
   &-grey{
     background: $brand-color;
+    z-index: 0;
   }
   &-gradient {
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    z-index: 1;
   }
   &-black-transparent {
     background-color: black; //$brand-color;
     opacity: 0.4;
+    z-index: 1;
   }
   &-yellow {
     background: $yellow;
+    z-index: 0;
+  }
+  &-white {
+    background: white;
+    z-index: 0;
   }
 }
 

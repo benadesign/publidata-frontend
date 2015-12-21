@@ -3,6 +3,8 @@
 //= require bootstrap-sprockets
 //= require underscore
 //= require gmaps/google
+//= require lightbox
+//= require owl.carousel
 //= require_tree .
 
 /**!

@@ -25,14 +25,14 @@ $bold-font: "Galano Grotesque Bold";
 }
 $medium-font: "Galano Grotesque Medium";
 
-// @font-face {
-//   font-family: "Galano Grotesque Medium";
-//   src: font-url('Rene Bieder - Galano Grotesque Medium.otf');
-//   src: font-url('Rene Bieder - Galano Grotesque Medium.otf?#iefix') format('embedded-opentype'),
-//        font-url('Rene Bieder - Galano Grotesque Medium.otf') format('woff'),
-//        font-url('Rene Bieder - Galano Grotesque Medium.otf') format('truetype')
-// }
-$base-font: "Galano Grotesque Medium";
+@font-face {
+  font-family: "Galano Grotesque";
+  src: url('Rene Bieder - Galano Grotesque.otf') format('truetype');
+  // src: font-url('Rene Bieder - Galano Grotesque.otf?#iefix') format('embedded-opentype'),
+  //      font-url('Rene Bieder - Galano Grotesque.otf') format('woff'),
+  //      font-url('Rene Bieder - Galano Grotesque.otf') format('truetype')
+}
+$base-font: "Galano Grotesque";
 
 // Font-size and line-height
 $base-size: 14px; // for content
@@ -41,6 +41,7 @@ $h1-size: 46px; // for titles, except on "votre agglo" page
 $h2-size: 32px; // for title of featured article on home
 $h3-size: 18px; // for articles titles
 $h4-size: 16px; // for city name on articles
+$mini-size: 12px;
 $base-height: 1.4;
 /* -------------------------------------
 * Colors

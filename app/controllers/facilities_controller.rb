@@ -18,6 +18,9 @@ class FacilitiesController < ApplicationController
       city: "Vert Saint Denis"
     }
 
+
+
+
     @city = {
       postal_code: "91200"
     }
