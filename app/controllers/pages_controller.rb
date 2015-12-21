@@ -28,6 +28,16 @@ class PagesController < ApplicationController
                 "Vert-Saint-Denis",
                 "Cesson",
                 "Nandy" ]
+
+    @figures = {
+      "habitants" => 331747,
+      "emplois" => 137000,
+      "entreprises" => 14985,
+      "étudiants" => 17700,
+      "logements" => 129000,
+      "espacesagricoles" => "51%",
+    }
+
   end
 
 end

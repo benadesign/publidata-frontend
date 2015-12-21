@@ -23,6 +23,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -30,93 +31,169 @@
 
   <!-- row for title -->
   <div class="row">
-    <div>
-      <h1>Carte d'identité</h1>
+    <div class="col-xs-12">
+      <h1 class="max-size">Carte d'identité</h1>
     </div>
   </div>
 
   <!-- row for vidéo -->
   <div class="row">
-    <div>
-      <h2>Vidéo#à rajouter plus tard</h2>
+    <div class="col-xs-12">
+      <div class = "card-bg flex-center" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(<%= image_path "tabularasa.jpg" %>)">
+        VIDEO
+      </div>
     </div>
+  </div>
+
+  <!-- row for the border -->
+  <div class="row margin-top-20 margin-bottom-20 top-border bottom-border">
   </div>
 
 
   <!-- row for the description of Grand Paris Sud -->
-  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap">
-    <div>
-      <h2>« Grand Paris Sud » qu'est-ce-que c'est ?</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class = "bg-height-500" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(<%= image_path "img_facility.jpg" %>)">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <span class="text-white bg-grey padding-right-5 padding-left-5"> Introduction</span>
+      <h2>Grand Paris Sud</h2>
       <p>Une nouvelle agglomération au sud de l'Ile-de-France qui regroupe 24 communes sur deux départements, l'Essonne et la Seine-et-Marne.</p>
-
       <p> Avec ses 331 747 habitants, Grand Paris Sud est le 5ème territoire francilien en nombre d'habitants et l'un des moteurs de la croissance démographique de la région Ile-de-France.
-        <ul>
-          <li>
-            Pôle économique majeur de la région francilienne, Grand Paris Sud accueille plus de 15 000 entreprises, de nombreux sièges sociaux de grands groupes ( Snecma-Safran, Arianespace, Truffaut..), des industries de pointe (high-tech, éco-activités, recherche médicale…), 5 centres commerciaux à notoriété régionale et 9 établissements d'enseignement supérieur attirant près de 18 000 étudiants.
-          </li>
-          <li>Parmi les atouts contribuant à l'attractivité de Grand Paris Sud :
-            <li>la conjugaison d'une desserte routière et ferroviaire dense (17 gares RER) avec une large présence des espaces verts (Forêts de Sénart, de Rougeau, Bois de Saint-Eutrope..) et terres agricoles.
-            </li>
-            <li>De nombreux équipements de loisirs, culturels et sportifs : salles dédiées au spectacle vivant (dont 2 scènes nationales), cinémas, réseaux de médiathèques et conservatoires, piscines, patinoire, bowling, parcours de golf, terrain de base-ball...
-            </li>
-          </li>
-        </ul>
-      </p>
+
+      Pôle économique majeur de la région francilienne, Grand Paris Sud accueille : </p>
+      <ul>
+        <li>
+          Plus de 15 000 entreprises, de nombreux sièges sociaux de grands groupes ( Snecma-Safran, Arianespace, Truffaut..),
+        </li>
+        <li>
+          Des industries de pointe (high-tech, éco-activités, recherche médicale…),
+        </li>
+        <li>
+          5 centres commerciaux à notoriété régionale
+        </li>
+        <li>
+         9 établissements d'enseignement supérieur attirant près de 18 000 étudiants.
+        </li>
+      </ul>
+      Parmi les atouts contribuant à l'attractivité de Grand Paris Sud :
+      <ul>
+        <li>La conjugaison d'une desserte routière et ferroviaire dense (17 gares RER) avec une large présence des espaces verts (Forêts de Sénart, de Rougeau, Bois de Saint-Eutrope..) et terres agricoles.
+        </li>
+        <li>De nombreux équipements de loisirs, culturels et sportifs : salles dédiées au spectacle vivant (dont 2 scènes nationales), cinémas, réseaux de médiathèques et conservatoires, piscines, patinoire, bowling, parcours de golf, terrain de base-ball...
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div class="row bloc-colored bloc-colored-blue margin-top-20 margin-bottom-20 flex-center flex-wrap"  >
-    <div class="col-xs-12 col-sm-4">
-      <h2>24 communes</h2>
-      <%= image_tag "carte.png" %>
-    </div>
-    <div class="col-xs-12 col-sm-8">
-      <div class="row">
-        <div class="col-xs-6">
-          <ul>
-            <% @communes[0..@communes.length/2.round].each do |commune| %>
-              <li>
-                <%= commune %>
-              </li>
-            <% end %>
-          </ul>
-        </div>
-        <div class="col-xs-6">
-          <ul>
-            <% @communes[@communes.length/2.round+1..@communes.length].each do |commune| %>
-              <li>
-                <%= commune %>
-              </li>
-            <% end %>
-          </ul>
+  <!-- row for the border -->
+  <div class="row margin-top-20 margin-bottom-20 top-border bottom-border">
+  </div>
+
+  <!-- row for the interactive card -->
+  <div class="row">
+    <div class = "col-xs-12 " >
+      <div class="text-white bg-blue">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 ">
+            <h2 class="padding-left-10 padding-right-10">24 communes</h2>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 padding-top-20 padding-bottom-20">
+                <ul>
+                  <% @communes[0..@communes.length/2.round].each do |commune| %>
+                    <li>
+                      <%= commune %>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+              <div class="col-xs-6 padding-top-20 padding-bottom-20">
+                <ul>
+                  <% @communes[@communes.length/2.round+1..@communes.length].each do |commune| %>
+                    <li>
+                      <%= commune %>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap ">
-    <div class="col-xs-12 col-sm-6 bloc-colored bloc-colored-grey">
-      <h3>La génèse</h3>
-      <p>Date de naissance : 1er janvier 2016 <p>
-      <p>Origines : la nouvelle agglomération est issue de la fusion des agglomérations d'Evry Centre Essonne (CAECE), de Seine Essonne (CASE), et de Sénart (Sénart), du Syndicat d'agglomération nouvelle de Sénart en Essonne ( SAN 91) et de la commune de Grigny jusqu'alors intégrée à l'agglomération des Lacs de l'Essonne (CALE).  <p>
-      <p> Pourquoi cette grande agglo ? cette fusion s'est faite dans le cadre de la mise en œuvre du Schéma Régional de Coopération Intercommunale (SRCI) ré-organisant la Grande Couronne francilienne.<p>
-      <p> L'objectif est de créer des intercommunalités de taille suffisante (+ de 200 000 habitants) pour peser dans les échanges avec la Métropole du Grand Paris. <p>
-      <p> Précédemment : 41 intercommunalités en Ile-de-France. Taille moyenne : 95 000 habitants<p>
-      <p> En janvier 2016 : 18 intercommunalités. Taille moyenne : 240 000 habitants</p>
+  <!-- row for the border -->
+  <div class="row margin-top-20 margin-bottom-20 top-border bottom-border">
+  </div>
+
+  <!-- row for the figures -->
+  <div class="row">
+    <div class="col-xs-12">
+      <% @figures.each do |name, figure| %>
+        <div class="col-xs-12 col-sm-4 left-border">
+          <div class="max-size"><%= figure %></div>
+          <div><%= name %></div>
+        </div>
+      <% end %>
     </div>
   </div>
 
-  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap ">
-    <div class="col-xs-12 col-sm-4 bloc-colored bloc-colored-red" style = "height: 150px;">
-      <ul>
-        <li class="chart text-center" data-percent="51"><span>51%</span>d'espaces agricoles</li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-    </div>
-    <div class="col-xs-12 col-sm-4">
+  <!-- row for the border -->
+  <div class="row margin-top-20 margin-bottom-20 top-border bottom-border">
+  </div>
+
+  <!-- row for the genèse -->
+  <div class="row margin-top-20 margin-bottom-20 flex-center flex-wrap bottom-border ">
+    <div class="col-xs-12">
+      <div class="text-white bg-grey padding-20">
+        <h2>La génèse</h2>
+        <p>Date de naissance : 1er janvier 2016 <p>
+        <p>Origines : la nouvelle agglomération est issue de la fusion des agglomérations d'Evry Centre Essonne (CAECE), de Seine Essonne (CASE), et de Sénart (Sénart), du Syndicat d'agglomération nouvelle de Sénart en Essonne ( SAN 91) et de la commune de Grigny jusqu'alors intégrée à l'agglomération des Lacs de l'Essonne (CALE).  <p>
+        <p> Pourquoi cette grande agglo ? cette fusion s'est faite dans le cadre de la mise en œuvre du Schéma Régional de Coopération Intercommunale (SRCI) ré-organisant la Grande Couronne francilienne.<p>
+        <p> L'objectif est de créer des intercommunalités de taille suffisante (+ de 200 000 habitants) pour peser dans les échanges avec la Métropole du Grand Paris. <p>
+        <p> Précédemment : 41 intercommunalités en Ile-de-France. Taille moyenne : 95 000 habitants<p>
+        <p> En janvier 2016 : 18 intercommunalités. Taille moyenne : 240 000 habitants</p>
+      </div>
     </div>
   </div>
+
+  <!-- row for the border -->
+  <div class="row margin-top-20 margin-bottom-20 top-border bottom-border">
+  </div>
+
+  <!-- row for vidéo -->
+  <div class="row">
+    <div class="col-xs-12">
+      <div class = "card-bg flex-center" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(<%= image_path "tabularasa.jpg" %>)">
+        <h1 class="text-center">en images</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- row for the border -->
+  <div class="row margin-top-20 margin-bottom-20 top-border bottom-border">
+  </div>
+
+  <!-- row for équipement featured -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class = "bg-height-200" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(<%= image_path "img_facility.jpg" %>)">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <span class="text-white bg-grey padding-right-5 padding-left-5"> les équipements représentatifs du territoire</span>
+      <h2>La Maison de l'environnement</h2>
+      <p>La Maison de l’Environnement et du Développement durable de Paris-Orly est un espace d’accueil, de dialogue et d’information. Elle apporte aux riverains des précisions sur la politique environnementale de l’aéroport, l’économie, l’emploi, les métiers et les formations, l’aide à l’insonorisation. </p>
+    </div>
+  </div>
+
+
+<!-- end of the container -->
+</div>
 
   <% content_for(:after_js) do %>
   <%= javascript_tag do %>
@@ -202,7 +279,7 @@
     var options = {
       scaleColor: false,
       trackColor: 'rgba(255,255,255,0.3)',
-      barColor: '#E7F7F5',
+      barColor: '#30B6C8',
       lineWidth: 6,
       lineCap: 'butt',
       size: 95
