@@ -10,9 +10,6 @@
       color: white;
       text-decoration: none;
     }
-    &:visited &:active &:focus {
-      text-decoration: none !important;
-    }
   }
 }
 .accordion-inner {
@@ -27,4 +24,9 @@
   padding-right: 2px;
   padding-left: 2px;
   margin-bottom: 5px;
+}
+
+// delete all underlines on focus for links
+a:focus {
+  text-decoration: none !important;
 }
