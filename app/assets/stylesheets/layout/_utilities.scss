@@ -3,6 +3,27 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+// Fonts
+body {
+  font-size: $base-size;
+  font-family: $medium-font;
+}
+h1 {
+  font-size: $h1-size;
+  font-family: $bold-font;
+}
+h2 {
+  font-size: $h2-size;
+  font-family: $bold-font;
+}
+h3 {
+  font-size: $h3-size;
+  font-family: $bold-font;
+}
+h4 {
+  font-size: $h4-size;
+  font-family: $medium-font;
+}
 
 // Paddings
 .padding-top-10 {
@@ -114,20 +135,6 @@
 }
 .padding-10 {
   padding: 10px;
-}
-
-// Backgrounds
-.bg-grey {
-  background: $brand-color;
-}
-.bg-blue {
-  background: $blue;
-}
-.bg-red {
-  background: $red;
-}
-.bg-yellow {
-  background: $yellow;
 }
 
 // maximum width of content

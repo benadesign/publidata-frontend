@@ -1,7 +1,5 @@
 
-.bloc-colored {
-  background-size: cover !important;
-  color: white;
+.bg {
   &-red{
     background: $red;
   }
@@ -14,14 +12,30 @@
   &-grey{
     background: $brand-color;
   }
+  &-gradient {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+  }
+  &-black-transparent {
+    background-color: black; //$brand-color;
+    opacity: 0.4;
+  }
+  &-yellow {
+    background: $yellow;
+  }
 }
 
-.text-colored {
+.text {
+  &-white {
+    color: white;
+  }
+  &-black {
+    color: black;
+  }
   &-red{
     color: $red;
   }
-  &-green{
-    color: $green;
+  &-orange{
+    color: $orange;
   }
   &-blue{
     color: $blue;
@@ -30,6 +44,5 @@
     color: $brand-color;
   }
 }
-
 
 
